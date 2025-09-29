@@ -1,0 +1,39 @@
+public class Driver {
+    // Поля класу
+    private int driverId;
+    private String name;
+    private String licenseNumber;
+    private String contactInfo;
+
+    // Конструктор за замовчуванням
+    public Driver() {
+    }
+
+    // Параметризований конструктор
+    public Driver(int driverId, String name, String licenseNumber, String contactInfo) {
+        this.driverId = driverId;
+        this.name = name;
+        this.licenseNumber = licenseNumber;
+        this.contactInfo = contactInfo;
+    }
+
+    // Порожні методи класу
+    public void updateContactInfo(String newContactInfo) {
+        // Логіка оновлення контактної інформації
+    }
+
+    public void assignToTransport() {
+        // Логіка призначення водія до транспорту
+    }
+
+    // Метод toString()
+    @Override
+    public String toString() {
+        return "Driver {" +
+                "driverId=" + driverId +
+                ", name='" + name + '\'' +
+                ", licenseNumber='" + licenseNumber + '\'' +
+                ", contactInfo='" + contactInfo + '\'' +
+                '}';
+    }
+}
