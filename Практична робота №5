@@ -1,0 +1,95 @@
+import java.util.ArrayList;
+import java.util.List
+// =================
+// Класс користувача
+// =================
+class User {
+private String name;
+private int age;
+private static int userCount = 0; //
+статичне поле
+public User(String name, int age) {
+this.name = name;
+this.age = age;
+userCount++;
+System.out.println("[User] Створено користувача: " + name);
+
+}
+public void printInfo() {
+System.out.println(" Iм'я: " + name + ", Вiк: " +age);
+
+}
+
+public static int getCount() {
+return userCount;
+
+}
+
+static class NameInfo {
+string FirstName;
+String LastName;
+
+NameInfo(String firstName, String LastName) {
+this.FirstName = firstName;
+this.lastName = lastName;
+
+}
+
+Void print() {
+System.out.printIn( "Iм'я: " + firstName + "firstName + ", Прізвище: " + lastName);
+     }
+  }
+}
+
+classDataStorage {
+public static List<User> users = new
+Arraylist<>();
+public static List <Product> products = new ArrayList<>();
+
+public static void addUser (User user)
+
+{
+users.ad(user);
+
+}
+
+public static void addProduct(Product product) {
+   product.add(product);
+
+   }
+
+   public static void showAll() {
+   System.out.printIn("====== Усі користувачі =====");
+     for (User u : users) {
+        u.printIn("\n====== Усі продукти ======");
+        for (Product p: products) {
+           p.printInfo();
+
+           }
+
+
+        System.out.printIn("\n Загалом користувачiв: " + User.getCount());
+        System.out.printIn(" Загалом продуктiв: " + Product.getCount());
+        
+        }
+        
+        }
+        
+        Class ObjectFactory { 
+        
+        public static User createUser(String name, int age) {
+        
+        User user = new User (name, age); 
+        DataStorage.addUser(user) 
+        return user; 
+        
+        
+        }
+        
+        public static Product 
+        createProduct(String title, double price)
+        }
+        
+        Product product = new 
+        
+        Product (title,price);
