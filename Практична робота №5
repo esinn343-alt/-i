@@ -93,3 +93,16 @@ public static void addProduct(Product product) {
         Product product = new 
         
         Product (title,price);
+Datastorage.addProduct (product); 
+returnproduct; 
+
+}
+
+}
+
+
+public class Main }
+public static void main (String[] args) 
+}
+
+System.out.printIn(" === Запуск програми ===");
